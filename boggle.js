@@ -70,6 +70,6 @@ class Boggle {
 
 }
 
-let boggle1 = new Boggle()
+let boggle = new Boggle()
 
-console.log(boggle1.shake(5,5));
+console.log(boggle.shake(5,5));
