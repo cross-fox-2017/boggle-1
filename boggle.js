@@ -52,24 +52,24 @@
 
 // "use strict"
 
-class Boggle {
+class Boggle1 {
   constructor() {
     this.board = []
     this.alphabets = 'abcdefghijklmnopqrstuvwxyz'.toUpperCase().split('')
   }
-  shake(left, right){
-    for (var i = 0; i < left; i++) {
-      this.board.push([])
-      for (var j = 0; j < right; j++) {
-        let random = Math.floor(Math.random() * 26)
-        this.board[i].push(this.alphabets[random])
-      }
+
+  shake(a, b){
+    for (var i = 0; i < a; i++) {
+     this.board.push([])
+     for (var j = 0; j < b; j++) {
+       let random = Math.floor(Math.random() * 26)
+       this.board[i].push(this.alphabets[random])
+     }
     }
     return this.board
   }
-
 }
 
-let boggle = new Boggle()
+let boggle1 = new Boggle1()
 
-console.log(boggle.shake(5,5));
+console.log(boggle1.shake(5,5));
